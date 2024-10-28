@@ -33,7 +33,6 @@ export class UsersController {
     return this.usersService.update(+id, updateUserDto);
   }
 
-  // Endpoint to delete a user by ID
   @Delete(':id')
   remove(@Param('id') id: string) {
     return this.usersService.remove(+id);
